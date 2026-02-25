@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jessa Esmana</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>💼</span> Portfolio
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 400px; padding: 60px 20px;">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>I'd love to hear from you! Let's discuss your project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="contact-container">
+            <h2 style="text-align: center; margin-bottom: 50px;">Contact Information</h2>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-item-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:esmanajessa@gmail.com">esmanajessa@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+639928824831">+63 992 882 4831</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Banaba, Padre Garcia, Batangas, Philippines</p>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div style="text-align: center; margin: 40px 0;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Follow Me</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com" title="Facebook" class="social-icon" target="_blank">f</a>
+                    <a href="https://twitter.com" title="Twitter" class="social-icon" target="_blank">𝕏</a>
+                    <a href="https://instagram.com" title="Instagram" class="social-icon" target="_blank">📷</a>
+                    <a href="https://linkedin.com" title="LinkedIn" class="social-icon" target="_blank">in</a>
+                    <a href="https://behance.net" title="Behance" class="social-icon" target="_blank">Be</a>
+                </div>
+            </div>
+
+            <hr style="margin: 40px 0; border: none; border-top: 2px solid #e2e8f0;">
+
+            <!-- Contact Form -->
+            <h3 style="text-align: center; color: var(--primary-color); font-size: 1.5rem; margin-bottom: 30px;">Send Me a Message</h3>
+
+            <div id="form-message"></div>
+
+            <form method="POST" action="process_contact.php" class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Project Inquiry / Collaboration / Other">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Type of Service (Optional)</label>
+                    <select id="service" name="service" style="width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-family: inherit; font-size: 1rem; transition: all 0.3s ease;">
+                        <option value="">Select a service</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="illustration">Illustration</option>
+                        <option value="video-editing">Video Editing</option>
+                        <option value="branding">Branding</option>
+                        <option value="ui-ux">UI/UX Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <p style="text-align: center; color: var(--text-light); margin-top: 20px; font-size: 0.9rem;">
+                I typically respond to inquiries within 24-48 hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional Visual) -->
+    <section style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(240, 147, 251, 0.08) 100%);">
+        <div class="container">
+            <h2>Let's Collaborate</h2>
+            <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: var(--shadow-light); text-align: center;">
+                <p style="font-size: 1.1rem; color: var(--text-light); line-height: 1.8;">
+                    Whether you have an exciting project in mind or just want to chat about creative ideas, 
+                    I'm always open to new opportunities and collaborations. Feel free to reach out through any of the contact methods above.
+                </p>
+                <p style="margin-top: 20px; color: var(--primary-color); font-weight: 600;">
+                    Looking forward to hearing from you! 🚀
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jessa Esmana. All rights reserved. | Designed with ❤️ and creativity</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const messageDiv = document.getElementById('form-message');
+            
+            fetch('process_contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                messageDiv.innerHTML = data;
+                if(data.includes('success')) {
+                    document.getElementById('contactForm').reset();
+                }
+            })
+            .catch(error => {
+                messageDiv.innerHTML = '<div class="message error">Error sending message. Please try again.</div>';
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
